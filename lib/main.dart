@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:fruit_juice_app_ui/home.dart';
+
+import 'shopping.dart';
 
 void main() {
   runApp(const MainApp());
@@ -9,12 +12,10 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return  MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(textTheme: TextTheme()),
+      home:const ShoppingCart()
     );
   }
 }
